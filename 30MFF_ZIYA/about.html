@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="about_styles.css">
+    <title>About</title>
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="memory.html">MEMORY</a></li>
+        </ul>
+    </nav>
+
+    <br><br>
+
+    <!-- About Me Section -->
+    <div class="about-container">
+        <img src="images\selfie.jpg" alt="Ziya Vhora" class="about-image">
+        <div class="about-textbox">
+            <h2>ABOUT ME</h2>
+            <h3>ZIYA VHORA</h3>
+            <p>A sophomore hoping to major in interactive media. Living in London, United Kingdom. If I am not busy, then you will catch me watching Zoolander or BBC Merlin. I love to read and write, as well as listen to music. One of my favorite songs is "Starman" by David Bowie, which I enjoy while reading or journaling.</p>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1</div>
+            <img src="images\scrapbook.jpg" style="width:100%">
+            <div class="text">My Scrapbook, My Memories</div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">2</div>
+            <img src="images\signs.jpeg" style="width:100%">
+            <div class="text"> Advice </div>
+        </div>
+        
+        <div class="mySlides fade">
+            <div class="numbertext">3</div>
+            <img src="images\chairs_pic.jpeg" style="width:100%">
+            <div class="text">Unwind, and think.</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">4</div>
+            <img src="images\pic4.jpeg" style="width:100%">
+            <div class="text">Appreciate nature</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">5</div>
+            <img src="images\signs.jpeg" style="width:100%">
+            <div class="text">Try to grow</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <div class="description-container">
+        <section class="image-description" id="description1">
+            <h2>My Scrapbook, My Memories</h2>
+            <p>This scrapbook is a treasure trove of my most cherished moments. Each page tells a story, each photo captures a slice of time that I hold dear. It's not just a collection of pictures, but a journey through the chapters of my life. This scrapbook is a time portal - it takes me back, even if it for a flicker of a second, to a moment I wished never stopped. This scrapbook immortalises my experiences, the good and the bad, so that I can look back wistfully</p>
+        </section>
+
+        <section class="image-description" id="description2">
+            <h2>Advice</h2>
+            <p>These signs remind me of the wisdom I've gathered along the way. They serve as gentle nudges, guiding me through life's twists and turns. Each piece of advice has shaped my perspective and helped me grow into who I am today.</p>
+        </section>
+
+        <section class="image-description" id="description3">
+            <h2>Unwind, and think</h2>
+            <p>This serene setting of chairs overlooking nature is my sanctuary for reflection. It's where I come to unwind, to let my thoughts wander, and to find clarity amidst life's chaos. It's a reminder to take a moment, breathe, and just be.</p>
+        </section>
+
+        <section class="image-description" id="description4">
+            <h2>Appreciate nature</h2>
+            <p>This breathtaking view of nature reminds me of the world's beauty and my place in it. It's a call to step outside, to breathe in the fresh air, and to marvel at the wonders around us. Nature, in its raw beauty, always grounds me and puts things into perspective.</p>
+        </section>
+
+        <section class="image-description" id="description5">
+            <h2>Try to grow</h2>
+            <p>These signs symbolize my journey of personal growth. They remind me that life is a continuous learning process, filled with opportunities to evolve and become a better version of myself. Each day is a chance to learn, to change, and to grow. In a place as dynamic as this university, change is inevitable, but this setting reminds me that it can be a good thing.</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

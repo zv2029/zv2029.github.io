@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap" rel="stylesheet">
+    <!--Fonts-->
+
+    <title>THE MEMORY GARDEN</title>
+    <link rel="stylesheet" href="memory_styles.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="memory.html">MEMORY</a></li>
+        </ul>
+    </nav>
+<!--Adding the Video-->
+    <div class="content-container">
+        <div class="video-container">
+            <video id="memoryVideo" controls>
+                <source src="THE MEMORY GARDEN.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+<!-- Descriptions-->
+        <div class="info-container">
+            <h2>The Memory Garden: Behind the Scenes</h2>
+     
+            
+            <div class="info-box" id="synopsis">
+                <h3>Synopsis - Click Me!</h3>
+                <p> </p>
+            </div>
+
+            <div class="info-box" id="technical">
+                <h3>Technical Details - Click Me!</h3>
+                <p> </p>
+            </div>
+
+            <div class="info-box" id="challenges">
+                <h3>Challenges Faced - Click Me!</h3>
+                <p> </p>
+            </div>
+
+            <div class="info-box" id="trivia">
+                <h3>Fun Trivia - Click Me!</h3>
+                <p> </p>
+            </div>
+        </div>
+    </div>
+    <script>
+      
+  document.addEventListener('DOMContentLoaded', function() {
+    const infoBoxes = document.querySelectorAll('.info-box');
+    const video = document.getElementById('memoryVideo');
+
+  
+    infoBoxes.forEach(box => {
+        box.addEventListener('click', function() {
+            this.classList.toggle('active');
+        });
+    });
+
+    //content for the info box
+    const infoContent = {
+        synopsis:"The Memory Garden is a poignant exploration of human memory and its connection to nature. This video takes viewers on a journey through a student, me, where she found a dedicated space to ground herself and actuallt appreicate the environment for her in such a hustle-bustle environment. As we grow, we get more nostaglic.",
+        technical: "Shot on an Iphone. This place was located inside The Arts Centre, therefore we had filmed under artifical lighting. We then applied the low exposure filter to add a dark academia effect. We then added text amd the fading animations on Capcut, carefully timing the texts woith the audio and length of the clips.",
+        challenges: "One of our biggest challenges was the timings. We only had 30 minutes to film this, and most of it was spent doing the actual videos and clips. However, as both my partner and I were experienced in editing, we were able to synthesise our visions together, especailyl as both of us enjoy and understand the dark academia aesthetic",
+        trivia: "Did you know? The memory garden has tons of books about fauna you can just borrow!"
+    };
+
+    //populating the boxes with the information
+    infoBoxes.forEach(box => {
+        box.addEventListener('click', function() {
+            const content = infoContent[this.id];
+            if (content) {
+                this.querySelector('p').textContent = content;
+            }
+        });
+    });
+
+    
+  });
+    </script>
+</body>
+</html>
