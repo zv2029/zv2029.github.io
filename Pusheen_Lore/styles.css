@@ -9,7 +9,7 @@ body, html {
 
 .parallax {
     position: relative;
-    opacity: 0.65;
+    /*opacity: 0.65;*/
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,11 +43,11 @@ h3 {
 }
 
 .img-1 {
-    background-image: url("images/volunteers.jpg");
+    background-image: url("materials/Background.png");
 }
 
 .img-2 {
-    background-image: url("images/nightlockberries.jpeg");
+    background-image: url("materials/Background.png");
 }
 
 .img-3 {
