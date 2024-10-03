@@ -1,65 +1,16 @@
-
 body, html {
     height: 100%;
     margin: 0;
     font-family: "Lato", sans-serif;
     letter-spacing: 2px;
-
-}
-
-.parallax {
-    position: relative;
-    /*opacity: 0.65;*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100%;
-}
-
-.caption {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 100%;
-    text-align: center;
-    color: #000;
-}
-
-.caption div.border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
+    overflow-x: hidden; 
 }
 
 h3 {
     letter-spacing: 5px;
     text-transform: uppercase;
-    font: "Lato", sans-serif;
     font-size: 20px;
     color: #111;
-}
-
-.img-1 {
-    background-image: url("materials/Background.png");
-}
-
-.img-2 {
-    background-image: url("materials/Background.png");
-}
-
-.img-3 {
-    background-image: url("images/mockingjaydress.jpeg");
-}
-
-.img-4 {
-    background-image: url("images/katnisskillscoin.jpeg");
-}
-
-.img-5 {
-    background-image: url("images/final_victory.jpeg");
 }
 
 .explanation {
@@ -67,3 +18,117 @@ h3 {
     text-align: center;
     padding: 50px 80px;
 }
+
+.parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+}
+
+
+.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    width: 100vw; 
+}
+
+.panel-1 {
+    background-image: url("materials/title-1.png");
+}
+
+.panel-2 {
+    background-image: url("materials/Background.png");
+    position: relative;
+}
+
+.panel-3 {
+    background-image: url("images/mockingjaydress.jpeg");
+}
+
+.panel-4 {
+    background-image: url("images/katnisskillscoin.jpeg");
+}
+
+.panel-5 {
+    background-image: url("images/final_victory.jpeg");
+}
+
+
+.GirlWalking {
+    background-image: url("materials/GirlWalking.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    transition: left 5s linear; 
+}
+
+.GirlWalking:hover {
+    width: 200px;
+    height: 300px;
+
+}
+
+.girl-walking-btn {
+    background-color: #ffd1dc; 
+    color: #555; 
+    padding: 15px 30px; 
+    font-family: "Lato", sans-serif; 
+    font-size: 18px; 
+    border-radius: 50px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+    position: absolute;
+    left: 50%;
+    top: 20%; 
+    transform: translate(-50%, -50%); 
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: "Patrick Hand", cursive;
+}
+
+.girl-walking-btn:hover {
+    background-color: #ffc1d1; 
+    transform: translateX(-50%) scale(1.05); 
+}
+
+.patrick-hand-regular {
+    font-family: "Patrick Hand", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-40px);
+    }
+}
+
+.comic-text {
+    font-family: "Patrick Hand", cursive; 
+    font-size: 36px; 
+    color: #FF5733; 
+    letter-spacing: 2px; 
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.7),
+        4px 4px 0 rgba(0, 0, 0, 0.3); 
+    animation: bounce 0.5s infinite alternate; 
+    margin: 0; 
+    position: absolute;
+    top: 10%; 
+    width: 100%; 
+    text-align: center; 
+    color: #000;
+}
+
