@@ -176,11 +176,10 @@ h3 {
 }
 
 #adopt-option {
-    color: #4CAF50; /* Green for adopt */
-}
+    color: #4CAF50; 
 
 #abandon-option {
-    color: #FF5733; /* Orange/red for abandon */
+    color: #FF5733; 
 }
 
 .comic-text-5 {
@@ -191,8 +190,8 @@ h3 {
     text-shadow: 
         2px 2px 0 rgba(255, 255, 255, 0.7),
         4px 4px 0 rgba(0, 0, 0, 0.3); 
-    margin: 70px 0; /* Add margin for spacing between sentences */
+    margin: 70px 0; 
     text-align: center;
-    display: block; /* Ensure the text behaves like a block element */
+    display: block; 
     width: 100%;
 }
