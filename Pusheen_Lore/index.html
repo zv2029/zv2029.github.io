@@ -8,21 +8,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="parallax panel-1">
     </div>
-    <div class="parallax panel-2" id="panel-2">
-            <p class="comic-text">Just another rainy day...</p>
-            <p><button onclick="myMove()" class="girl-walking-btn">START THE STORY</button></p> 
-        <div class="GirlWalking" id="girl-walking"></div>
-    </div>
     
+    <div class="parallax panel-2" id="panel-2">
+        <p class="comic-text">Just another rainy day...</p>
+        <p><button onclick="myMove()" class="girl-walking-btn">START THE STORY</button></p> 
+        <div class="GirlWalking" id="girl-walking"></div>
+    </div>    
 
-    <div class="parallax panel-2">
-    </div>
     <script>
         function myMove() {
           let id = null;
@@ -41,11 +39,16 @@
         }
     </script>
 
-    <script src="2boxAppear.js"></script>
+    <div class="parallax panel-14">
+        <p class="comic-text">What is in the box?</p> 
+    </div>
 
+    <div class="parallax panel-13">
+        <p class="comic-text">The cat is coming out of the box...</p>
+    </div>
 
     <div class="parallax panel-4">
-            <p class="comic-text-4">To Adopt, or Abandon? That is the question...</p>
+        <p class="comic-text-4">To Adopt, or Abandon? That is the question...</p>
         <div id="options-container">
             <div class="option" id="adopt-option" onclick="chooseOption('adopt')">Adopt</div>
             <div class="option" id="abandon-option" onclick="chooseOption('abandon')">Abandon</div>
@@ -53,47 +56,43 @@
         <script>
             function chooseOption(option) {
                 if (option === 'adopt') {
-                    // Scroll to adopt section or change to an "adopt" outcome
-                    window.location.href = "#adopt-section"; // Adjust as per your desired action
+                    window.location.href = "#adopt-section"; // Scroll to adopt section
                 } else if (option === 'abandon') {
-                    // Scroll to abandon section or change to an "abandon" outcome
-                    window.location.href = "#abandon-section"; // Adjust as per your desired action
+                    window.location.href = "#abandon-section"; // Scroll to abandon section
                 }
             }
         </script>
     </div>
-    <div class="parallax panel-5" id="adopt-section">
-        <p class="comic-text">You chose to Adopt!</p>
-        <div class="outcome">
-            <p class="comic-text-5">The cat is now your loving companion.</p> <br>
-            <p class="comic-text-5"> Together, you embark on a life of joy and cuddles.</p>
-   
-        </div>
 
+    <div class="parallax panel-5" id="adopt-section">
+        <p class="comic-text-4">You chose to Adopt!</p>
+        <div class="outcome">
+            <p class="comic-text-5">The cat is now your loving companion.</p> 
+            <p class="comic-text-5">Together, you embark on a life of joy and cuddles.</p>
+        </div>
     </div>
 
     <div class="parallax panel-6">
-
-    <div class="outcome">
-        <p class="comic-text-5">The cat is now lovingly fed</p> <br>
-
+        <div class="outcome">
+            <p class="comic-text-5">The cat is now lovingly fed.</p>
+        </div>
     </div>
 
+    <div class="parallax panel-12">
+        <p class="comic-text-5">Your Pusheen is becoming clean.</p>
     </div>
 
     <div class="parallax panel-9">
-        <p class="comic-text"> And he lived happily ever after!</p>
+        <p class="comic-text">And he lived happily ever after!</p>
     </div>
 
-    <div class = "parallax panel-7" id ="abandon-section">
-        <p class="comic-text"> You chose to abandon pusheen ...</p>
+    <div class="parallax panel-7" id="abandon-section">
+        <p class="comic-text">You chose to abandon Pusheen...</p>
     </div>
 
-    <div class = "parallax panel-8">
-        <p class="comic-text"> Pusheen got sad ...</p>
-        <script src="poison.js"></script>
+    <div class="parallax panel-8">
+        <p class="comic-text">Pusheen got sad...</p>
     </div>
 
-     
 </body>
 </html>
