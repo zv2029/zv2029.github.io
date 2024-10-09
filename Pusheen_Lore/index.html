@@ -10,12 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
 </head>
 <body>
-
     <div class="parallax panel-1">
-
     </div>
     <div class="parallax panel-2" id="panel-2">
             <p class="comic-text">Just another rainy day...</p>
@@ -24,15 +21,7 @@
     </div>
     
 
-    <div class="explanation">
-        <h3>1. Volunteering as Tribute</h3>
-        <p>[Text about Katniss Everdeen]</p>
-    </div>
-
-    <div class="parallax panel-3">
-        <div class="caption">
-            <div class="border">THE MOCKINGJAY DRESS</div>
-        </div>
+    <div class="parallax panel-2">
     </div>
     <script>
         function myMove() {
@@ -52,21 +41,56 @@
         }
     </script>
 
-    <div class="parallax panel - 1">
-        <div class="caption">
-            <div class="border">THE FINAL VICTORY</div>
+    <div class="parallax panel-4">
+            <p class="comic-text-4">To Adopt, or Abandon? That is the question...</p>
+        <div id="options-container">
+            <div class="option" id="adopt-option" onclick="chooseOption('adopt')">Adopt</div>
+            <div class="option" id="abandon-option" onclick="chooseOption('abandon')">Abandon</div>
         </div>
-        <div id="sketch-container"></div>
+        <script>
+            function chooseOption(option) {
+                if (option === 'adopt') {
+                    // Scroll to adopt section or change to an "adopt" outcome
+                    window.location.href = "#adopt-section"; // Adjust as per your desired action
+                } else if (option === 'abandon') {
+                    // Scroll to abandon section or change to an "abandon" outcome
+                    window.location.href = "#abandon-section"; // Adjust as per your desired action
+                }
+            }
+        </script>
+    </div>
+    <div class="parallax panel-5" id="adopt-section">
+        <p class="comic-text">You chose to Adopt!</p>
+        <div class="outcome">
+            <p class="comic-text-5">The cat is now your loving companion.</p> <br>
+            <p class="comic-text-5"> Together, you embark on a life of joy and cuddles.</p>
+   
+        </div>
+
     </div>
 
-    <div class="explanation">
-        <h3>5. Finding Peace and Healing</h3>
-        <p>The final and perhaps most poignant moment in Katniss's journey is her ultimate victory - not over external enemies, but over the trauma and pain that have defined her life. In the epilogue, we see Katniss years later, having built a life with Peeta and starting a family. This quiet moment of peace is a powerful contrast to the violence and turmoil of her earlier life. It represents Katniss's resilience and her ability to heal, even after enduring unimaginable horrors. Her decision to have children, despite her earlier fears, shows her growing trust in the new world she helped create. This ending is not just a personal victory for Katniss, but a testament to the human spirit's capacity for recovery and hope. It's a reminder that even after war and loss, there is the possibility for joy and renewal. Katniss's journey from a girl fighting for survival to a woman who has found peace serves as an inspiring conclusion to her epic story.</p>
+    <div class="parallax panel-6">
+
+    <div class="outcome">
+        <p class="comic-text-5">The cat is now lovingly fed</p> <br>
 
     </div>
 
-    <script src="poison.js"></script>
+    </div>
 
-        
+    <div class="parallax panel-9">
+        <p class="comic-text"> And he lived happily ever after!</p>
+    </div>
+
+    <div class = "parallax panel-7" id ="abandon-section">
+        <p class="comic-text"> You chose to abandon pusheen ...</p>
+    </div>
+
+    <div class = "parallax panel-8">
+        <p class="comic-text"> Pusheen got sad ...</p>
+        <script src="poison.js"></script>
+    </div>
+
+     
 </body>
 </html>
