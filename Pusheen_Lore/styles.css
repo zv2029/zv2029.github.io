@@ -4,6 +4,7 @@ body, html {
     font-family: "Lato", sans-serif;
     letter-spacing: 2px;
     overflow-x: hidden; 
+    
 }
 
 h3 {
@@ -11,12 +12,6 @@ h3 {
     text-transform: uppercase;
     font-size: 20px;
     color: #111;
-}
-
-.explanation {
-    background-color: white;
-    text-align: center;
-    padding: 50px 80px;
 }
 
 .parallax {
@@ -27,6 +22,8 @@ h3 {
     background-size: cover;
     min-height: 100vh;
     width: 100vw;
+    margin:0%;
+    padding: 0%;
 }
 
 
@@ -47,16 +44,29 @@ h3 {
 }
 
 .panel-3 {
-    background-image: url("images/mockingjaydress.jpeg");
+    background-image: url("materials/title-1.png");
 }
 
 .panel-4 {
-    background-image: url("images/katnisskillscoin.jpeg");
+    background-image: url("materials/choices.png");
 }
 
-.panel-5 {
-    background-image: url("images/final_victory.jpeg");
+.panel-9 {
+    background-image: url("materials/5cBg.png");
 }
+.panel-5 {
+    background-image: url("materials/wp12123551-pusheen-house-wallpapers.jpg");
+}
+.panel-7 {
+    background-image: url("materials/5aBG.png");
+}
+.panel-8{
+    background-image: url("materials/5bBg.PNG");
+}
+.panel-6{
+    background-image: url('materials/feedcat.png');
+}
+
 
 
 .GirlWalking {
@@ -106,14 +116,6 @@ h3 {
     font-style: normal;
   }
 
-@keyframes bounce {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-40px);
-    }
-}
 
 .comic-text {
     font-family: "Patrick Hand", cursive; 
@@ -123,7 +125,6 @@ h3 {
     text-shadow: 
         2px 2px 0 rgba(255, 255, 255, 0.7),
         4px 4px 0 rgba(0, 0, 0, 0.3); 
-    animation: bounce 0.5s infinite alternate; 
     margin: 0; 
     position: absolute;
     top: 10%; 
@@ -132,3 +133,66 @@ h3 {
     color: #000;
 }
 
+
+.comic-text-4 {
+    font-family: "Patrick Hand", cursive;
+    font-size: 48px;
+    color: #FFB6C1;
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.9),
+        4px 4px 0 rgba(0, 0, 0, 0.3);
+    text-align:start;
+    padding: 80px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+#options-container {
+    position: relative;
+    width: 100%;
+    height: 100%; /* Full height of the panel */
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    gap: 70px; /* Adds space between the buttons */
+}
+
+.option {
+    font-family: "Patrick Hand", cursive;
+    font-size: 40px;
+    padding: 20px 40px;
+    background-color: #ffe0b2;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.option:hover {
+    transform: scale(1.1);
+    background-color: #ffc1d1;
+}
+
+#adopt-option {
+    color: #4CAF50; /* Green for adopt */
+}
+
+#abandon-option {
+    color: #FF5733; /* Orange/red for abandon */
+}
+
+.comic-text-5 {
+    font-family: "Patrick Hand", cursive; 
+    font-size: 36px; 
+    color: #FF5733; 
+    letter-spacing: 2px; 
+    text-shadow: 
+        2px 2px 0 rgba(255, 255, 255, 0.7),
+        4px 4px 0 rgba(0, 0, 0, 0.3); 
+    margin: 70px 0; /* Add margin for spacing between sentences */
+    text-align: center;
+    display: block; /* Ensure the text behaves like a block element */
+    width: 100%;
+}
