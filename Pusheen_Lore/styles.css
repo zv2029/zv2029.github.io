@@ -27,7 +27,7 @@ h3 {
 }
 
 
-.panel-1, .panel-2, .panel-3, .panel-4, .panel-5 {
+.panel-1, .panel-2, .panel-3, .panel-4, .panel-5, .panel-12,.panel-13,.panel-14{
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -43,9 +43,6 @@ h3 {
     position: relative;
 }
 
-.panel-3 {
-    background-image: url("materials/title-1.png");
-}
 
 .panel-4 {
     background-image: url("materials/choices.png");
@@ -66,6 +63,18 @@ h3 {
 .panel-6{
     background-image: url('materials/feedcat.png');
 }
+
+.panel-12{
+    background-image: url('7aBgWashing.jpg');
+}
+
+.panel-13{
+    background-image: url('3CatFound.png');
+}
+.panel-14{
+    background-image: url('3InBox.png');
+}
+
 
 
 
@@ -120,7 +129,6 @@ h3 {
 .comic-text {
     font-family: "Patrick Hand", cursive; 
     font-size: 36px; 
-    color: #FF5733; 
     letter-spacing: 2px; 
     text-shadow: 
         2px 2px 0 rgba(255, 255, 255, 0.7),
@@ -137,9 +145,9 @@ h3 {
 .comic-text-4 {
     font-family: "Patrick Hand", cursive;
     font-size: 48px;
-    color: #FFB6C1;
+    color: #00ff00;
     text-shadow: 
-        2px 2px 0 rgba(255, 255, 255, 0.9),
+        2px 2px 0 rgba(0, 0, 0, 0.9),
         4px 4px 0 rgba(0, 0, 0, 0.3);
     text-align:start;
     padding: 80px;
@@ -177,6 +185,7 @@ h3 {
 
 #adopt-option {
     color: #4CAF50; 
+}
 
 #abandon-option {
     color: #FF5733; 
