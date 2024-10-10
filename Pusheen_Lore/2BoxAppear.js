@@ -15,8 +15,8 @@ function preload() {
 }
 
 function setup() {
-  let canvas = createCanvas(1920,1080);
-  canvas.parent('second-parent');
+  let huabu = createCanvas(windowWidth,windowHeight);
+  huabu.parent('boxappearcontain');
   // createCanvas(1920,1080);  // 创建画布大小为浏览器窗口大小
   
   // 初始化女孩的X坐标，从屏幕左边开始
